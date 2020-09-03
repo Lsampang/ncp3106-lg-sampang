@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>Trial.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="lorenzo.css">
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body style="background-color:#f0fff0;">
+
+	<div class="row">
+  		<div class="column">
+    		<img src="first.png" alt="una" style="width:500px; height: 150px; margin-top: -15px; margin-left: -15px">
+  		</div>
+  		<div class="column">
+    		<img src="kazuto.png" alt="pangalawa" style="width:1025px; height: 150px; margin-top: -15px; margin-left: -10px">
+  		</div>
+		</div>
+	<div>
+		<img class="bg_size" src="grock.jpg" alt="background" style="border: 5px solid blue">
+	</div>
+	<center>
+    <p style="margin-top: 50px; font-size: 50px; text-shadow: 0px 5px 5px #3e00b3; margin-left: 100px" style="font-style: bold;">Kazuto's Highlights</p>
+  </center>
+  <center>
+  <div>
+    <video style="height: 500px; width: 800px" width="400" controls>
+    <source src="high1.mp4" type="video/mp4">
+  </div>
+  <div>
+    <video style="height: 500px; width: 800px" width="400" controls>
+    <source src="high2.mp4" type="video/mp4">
+  </div>
+  <div>
+    <video style="height: 500px; width: 800px" width="400" controls>
+    <source src="high3.mp4" type="video/mp4">
+  </div>
+  <div>
+    <video style="height: 500px; width: 800px" width="400" controls>
+    <source src="meme1.mp4" type="video/mp4">
+  </div>
+  <div>
+    <video style="height: 500px; width: 800px" width="400" controls>
+    <source src="meme2.mp4" type="video/mp4">
+  </div>
+  <div>
+    <video style="height: 500px; width: 800px" width="400" controls>
+    <source src="meme3.mp4" type="video/mp4">
+  </div>
+</center>
+<div class="row">
+      <div class="column">
+        <img src="kawawa2.png" alt="una" style="width:500px; height: 150px; margin-top: 50px; margin-left: -15px">
+      </div>
+      <div class="column">
+        <img src="basketball.png" alt="pangalawa" style="width:1025px; height: 150px; margin-top: 50px; margin-left: -10px">
+      </div>
+    </div>
+    <center>
+      <p style="margin-top: 50px; font-size: 50px; text-shadow: 0px 5px 5px #3e00b3; margin-left: 100px" style="font-style: bold;">Basketball Pictures</p>
+</center>
+<center>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides w3-animate-fading" src="1.jpg" style="width:500px; height: 600px; margin-left: 40px; border: 5px solid purple">
+  <img class="mySlides w3-animate-fading" src="2.jpg" style="width:500px; height: 600px; margin-left: 40px; border: 5px solid purple">
+  <img class="mySlides w3-animate-fading" src="3.jpg" style="width:500px; height: 600px; margin-left: 40px; border: 5px solid purple">
+  <img class="mySlides w3-animate-fading" src="4.jpg" style="width:500px; height: 600px; margin-left: 40px; border: 5px solid purple">
+  <img class="mySlides w3-animate-fading" src="5.jpg" style="width:500px; height: 600px; margin-left: 40px; border: 5px solid purple">
+  <img class="mySlides w3-animate-fading" src="6.jpg" style="width:500px; height: 600px; margin-left: 40px; border: 5px solid purple">
+  <img class="mySlides w3-animate-fading" src="curry.gif" style="width:100%; margin-left: 20px">
+  <audio controls style="margin-left: 130px;" autoplay>
+  <source src="slamdunk.mp3" type="audio/mpeg">
+</audio>
+</div>
+</center>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+
+
+ 
+
+
+</body>
+</html>
